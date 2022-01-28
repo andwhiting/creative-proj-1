@@ -15,6 +15,20 @@
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.header h1 {
+  margin-top: 50px;
+  font-size: 5em;
+}
+
+.spacer {
+  height: 50px;
+  background-color: #488c03;
+  width: 100%
 }
 
 .section {
@@ -25,8 +39,8 @@
   position: relative;
 }
 
-.illustration {
-  max-width: 100%;
+.illustration img {
+  width: 100%;
   height: auto;
 }
 
@@ -52,14 +66,29 @@
   background-color: #488c03;
 }
 
-.link img {
+.small-img img {
   width: 60%;
   height: auto;
 }
 
+.bg-dark {
+  background-color: #402e24 !important;
+}
+
+.link, .link:hover{
+  font-style: normal;
+  color: #212529;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+  .content {
+    flex-direction: column;
+  }
 
+  .content-item {
+    width: 100%;
+  }
 }
 
 /* Tablet Styles */

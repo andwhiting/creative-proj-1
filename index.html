@@ -2,6 +2,7 @@
 <html lang ="en">
   <head>
     <meta charset="UTF-8"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles.css" />
     <title>My Shop</title>
@@ -20,13 +21,13 @@
             <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="/products/">Products</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item disabled">
             <a class="nav-link" href="#">Pricing</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
+          <li class="nav-item disabled">
+            <a class="nav-link" href="#">Services</a>
           </li>
         </ul>
       </div>
@@ -34,19 +35,21 @@
 
     <div class="page">
       <div class="header">
+        <h1>Fertilizer</h1>
         <div class="section illustration">
-          <img src="/images/smol-plant.jpg  "/>
-          <div class="middle-left">Growing a garden?</div>
+          <a href="/products/">
+            <img src="/images/smol-plant.jpg"/>
+          </a>
         </div>
       </div>
       <div class="content">
-        <div class="content-item link">
+        <div class="content-item small-img">
           <img src="/images/hands.jpg"/>
         </div>
-        <div class="content-item link">
+        <div class="content-item small-img">
           <img src="/images/spinach.jpg"/>
         </div>
-        <div class="content-item link">
+        <div class="content-item small-img">
           <img src="/images/Wahyu-Rice-Farmer.jpg"/>
         </div>
         <div class="content-item">
@@ -70,9 +73,7 @@
         <p>Contact Us</p>
       </div>
       <div class="footer-item">
-        <button>
-          <h3>Github</h3>
-        </button>
+          <h3><a class="link" href="https://github.com/andwhiting/creative-proj-1">Github</a></h3>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
